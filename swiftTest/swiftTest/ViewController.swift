@@ -37,7 +37,7 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
         let str: String = String(format: "%d", indexPath.row+1);
         cell?.myLabel?.text = str;
         println(picDictionary[str]);
-        cell?.myImageView?.image = UIImage(named: str)
+        cell?.myImageView?.image = UIImage(named: picDictionary[str]!)
         return cell!
     }
 
